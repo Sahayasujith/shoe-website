@@ -1,0 +1,167 @@
+<!--
+Shoe Shop - HTML file with external CSS
+Save these two files in the same folder:
+1. index.html
+2. style.css (CSS code provided below)
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoe Shop — Modern Responsive Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">SS</div>
+        <div>
+          <div style="font-size:14px;opacity:0.9">Shoe Shop</div>
+          <div style="font-size:11px;color:var(--muted)">Step into style</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#best">Best sellers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <button class="outline" aria-label="Open cart">Cart</button>
+        <a class="btn" href="#collections">Shop now</a>
+        <button class="hamburger" id="hamb">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu container" aria-hidden="true">
+      <a href="#">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#best">Best sellers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Find the perfect pair for every step.</h1>
+        <p>Curated shoes for comfort, style and performance. Discover new arrivals and limited editions.</p>
+        <div class="search" role="search">
+          <input type="search" placeholder="Search shoes, brands, styles..." aria-label="Search products" />
+          <a class="btn" href="#collections">Search</a>
+        </div>
+        <div style="margin-top:18px;color:var(--muted);font-size:14px">Free shipping on orders over ₹1,500 • 30-day returns</div>
+      </div>
+
+      <aside class="hero-right" aria-hidden="false">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+          <div style="flex:1">
+            <div style="font-weight:800">Trending</div>
+            <div class="muted" style="font-size:13px">New colorways just dropped</div>
+          </div>
+          <div style="font-weight:800;font-size:20px">🔥</div>
+        </div>
+        <div class="product-large">
+          <img src="https://images.unsplash.com/photo-1616258374372-6801d31bdbed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1025" alt="Sneaker 1">
+          <img src="https://images.unsplash.com/photo-1715003132878-301e45a578ad?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332" alt="Sneaker 2">
+        </div>
+      </aside>
+    </section>
+
+    <section id="collections" class="section">
+      <h2>Collections</h2>
+      <p class="muted">Hand-picked categories to match your journey.</p>
+
+      <div class="grid" style="margin-top:16px">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764" alt="Running shoes">
+          <h3>Air Runner</h3>
+          <div class="muted">Lightweight running shoes</div>
+          <div class="price-row"><div class="price">₹3,199</div><a class="outline" href="#">View</a></div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1179" alt="Casual shoes">
+          <h3>Everyday Loaf</h3>
+          <div class="muted">Casual comfort for all-day wear</div>
+          <div class="price-row"><div class="price">₹2,499</div><a class="outline" href="#">View</a></div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Trail shoes">
+          <h3>Trail Blazer</h3>
+          <div class="muted">Grip and durability for off-road</div>
+          <div class="price-row"><div class="price">₹4,099</div><a class="outline" href="#">View</a></div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Formal shoes">
+          <h3>Classic Derby</h3>
+          <div class="muted">Timeless design for special occasions</div>
+          <div class="price-row"><div class="price">₹3,599</div><a class="outline" href="#">View</a></div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1131" alt="Sandals">
+          <h3>Coastal Sandals</h3>
+          <div class="muted">Breezy and comfortable</div>
+          <div class="price-row"><div class="price">₹1,299</div><a class="outline" href="#">View</a></div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1656944227421-d0e8de487d9d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="High heels">
+          <h3>Evening Heels</h3>
+          <div class="muted">Elegant silhouettes</div>
+          <div class="price-row"><div class="price">₹2,899</div><a class="outline" href="#">View</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="best" class="section">
+      <h2>Best sellers</h2>
+      <p class="muted">Popular picks loved by customers</p>
+      <div style="display:flex;gap:12px;overflow:auto;padding:12px 0">
+        <div style="min-width:220px" class="card">
+          <img src="https://images.unsplash.com/photo-1651013691313-81b822df0044?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074" alt="Best 1">
+          <h3>Comfy Runner</h3>
+          <div class="price-row"><div class="price">₹2,999</div><a class="outline" href="#">View</a></div>
+        </div>
+        <div style="min-width:220px" class="card">
+          <img src="https://images.unsplash.com/photo-1608551279774-4b0c208cf00d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Best 2">
+          <h3>Street Sneak</h3>
+          <div class="price-row"><div class="price">₹3,399</div><a class="outline" href="#">View</a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center">
+      <div>
+        <div style="font-weight:700">Shoe Shop</div>
+        <div class="muted" style="font-size:13px">© 2025 Shoe Shop — All rights reserved</div>
+      </div>
+      <div class="muted">Contact: hello@shoeshop.example • +91 98765 43210</div>
+    </div>
+  </footer>
+
+  <script>
+    const hamb = document.getElementById('hamb');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamb.addEventListener('click', ()=>{
+      const shown = mobileMenu.classList.toggle('show');
+      mobileMenu.setAttribute('aria-hidden', !shown);
+    });
+  </script>
+</body>
+</html>
